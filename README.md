@@ -44,8 +44,8 @@ Urban Routes Portfolio Metrics:
 To ensure comprehensive test coverage, the following techniques were used:
 
 * **Requirements Analysis:** Breakdown of the "Car Sharing" feature.
-* **Mind Maps:** Visualization of the "Add Driver License" workflow ([View map](./docs/design/driver_license_mind_map.png)).
-* **Flowcharts:** Modeling of average speed logic based on departure time ([View flowchart](./docs/design/speed_logic_flowchart.png)).
+* **Mind Maps:** Visualization of the "Add Driver License" workflow ([View map](./docs/design/UI_assets/car_sharing_service/driver_license_mind_map.png)).
+* **Flowcharts:** Modeling of average speed logic based on departure time ([View flowchart](./docs/design/UI_assets/car_sharing_service/speed_logic_flowchart.png)).
 * **Test Design Techniques:**
     * **Equivalence Partitioning (ECP):** Applied to the "First Name", "Last Name", distance between addresses, Departure Time (determines average transportation speed), "Card Number", and "Code" fields.
     * **Boundary Value Analysis (BVA):** Identification of critical boundary points for character length validation in the "First Name", "Last Name", "Card Number", and "Code" fields. Also applied to departure time limits.
