@@ -1,46 +1,73 @@
-# QA Testing: Aplicación Web y Lógica de Negocio - Urban Routes
+# QA Testing: Web Application and Business Logic - Urban Routes
 
-## 1. Descripción del Proyecto
-Urban Routes es una plataforma de transporte que integra múltiples servicios (taxi, automóvil compartido, scooters). El objetivo de este proyecto fue validar la lógica de cálculo de rutas (precio/tiempo), la funcionalidad de reserva de vehículos y la consistencia de la interfaz en diferentes entornos de navegación.
+## 1. Project Description
+Urban Routes is a transportation platform that integrates multiple services (taxi, car sharing, and scooters). The objective of this project was to validate route calculation logic (pricing/time estimation), vehicle booking functionality, and UI consistency across different browser environments.
 
-**Problema de Negocio:** Asegurar que el algoritmo de precios sea exacto según la distancia y hora de salida, y que el flujo de registro de conductores/licencias no presente fricciones que impidan la conversión de usuarios.
+**Business Problem:** Ensure that the pricing algorithm calculates accurate fares based on distance and departure time, and that the driver registration/license workflow is frictionless to prevent user conversion drop-offs.
 
-## 2. Estrategia de Pruebas
-Se implementó un enfoque de **Shift-Left Testing**, iniciando con el análisis de requerimientos y diseño de pruebas antes de la ejecución.
+## 2. Test Strategy & Coverage
+A **Shift-Left Testing** approach was implemented, initiating QA involvement during the requirement analysis and test design phases prior to execution. This strategy ensured early defect detection in business logic and UI layout compliance before concluding development cycles.
 
-* **Tipos de pruebas:** Regresión, Funcionales, UI/UX (Cross-browser), y Pruebas de Caja Negra (Partición de Clases de Equivalencia y Análisis de Valores Límite).
-* **Entornos:**
-    * Google Chrome (Resolución 800x600).
-    * Mozilla Firefox (Resolución 1920x1080).
+### Test Types Applied
+*   **Regression Testing:** Full execution of core functionalities to verify system stability after changes.
+*   **Functional Testing:** Validation of business logic, formulas, and transaction criteria (Car sharing and booking loops).
+*   **Black-Box Design Techniques:** Boundary Value Analysis (BVA) and Equivalence Partitioning (ECP) applied to text inputs and calculation parameters.
+*   **UI/UX & Cross-Browser Testing:** Verification of visual layouts across different screen resolutions and rendering engines.
 
-## 3. Metodología de Diseño de Pruebas
-Para garantizar una cobertura exhaustiva, se utilizaron las siguientes técnicas:
+### Test Environments & Scope Matrix
 
-* **Análisis de Requisitos:** Descomposición de la función "Compartir automóvil".
-* **Mapas Mentales:** Visualización del flujo de "Agregar licencia de conducir" ([Ver mapa](./docs/design/UrbanRoutes_AgregarLicenciaConducir_QA_MindMap.png)).
-* **Diagramas de Flujo:** Modelado de la lógica de velocidad promedio según la hora ([Ver diagrama](./docs/design/UrbanRoutes_SeleccionVelocidadAutomovilCompartido_QA__FlowChart.png)).
-* **Técnicas de Diseño:**
-    * **Clases de Equivalencia (ECP):** Aplicadas a los campos "Nombre", "Apellido", distancia entre las direcciones, Hora de salida (determina la velocidad promedio del transporte), campos "Número de tarjeta" y "Código".
-    * **Valores Límite (BVA):** Identificación de puntos críticos para la longitud de caracteres en los campos "Nombre", "Apellido", "Número de tarjeta" y "Código". Tambien, para los límites en las horas de salida.
+The verification scope was distributed across specific configurations to optimize testing efficiency based on platform requirements:
 
-## 4. Ejecución y Resultados
-### Lógica de Cálculo (Ejemplo de Validación)
-* **Fórmula:** $T = S / V$ | $Precio = T \times Costo/min$
-* **Escenario:** East 2nd St -> 1717 E 7th St (0.89 km) a las 11:00 (30 km/h).
-* **Resultado Esperado:** 1.8 min / $0.18.
-* **Resultado Observado:** [Insertar si hubo éxito o error].
+| Module / Feature | Test Type | Environment / Configuration | Scope / Volume |
+| :--- | :--- | :--- | :--- |
+| **01 Core Regression** | Functional Regression | Google Chrome | 24 Test Cases executed |
+| **02 Car Sharing Logic** | Business Logic Design | N/A (Static Logic Design) | 30 Test Cases designed (ECP/BVA) |
+| **03 Form Layout UI** | Cross-Browser UI | Google Chrome (800x600) <br> Mozilla Firefox (1920x1080) | 93 Checklist items verified |
+| **03 Payment Window** | Functional UI / Security | Google Chrome | 56 Checklist items verified |
+| **03 Booking Buttons** | End-to-End Functional | Google Chrome | 14 Test Cases (10 executed, 4 skipped) |
 
-### Resumen de Hallazgos
-| Total de Casos | Pasados | Fallidos | Bloqueados |
+---
+
+### Metrics & Defect Management Summary
+
+The total lifecycle volume encompassed **68 test cases**, **149 checklist elements**, and the identification and formal logging of **61 defects** in Jira:
+
+```text
+Urban Routes Portfolio Metrics:
+│
+├── [Phase 1] Core Regression ────> 24 Executed TCs      │ 7 Bugs Logged
+├── [Phase 2] Car Sharing Logic ──> 30 Designed TCs      │ 0 Bugs (Design Only)
+└── [Phase 3] Payment & Booking ──> 149 Checklist Items  │ 54 Bugs Logged (UI/Cross-Browser)
+```
+
+## 3. Test Design Methodology
+To ensure comprehensive test coverage, the following techniques were used:
+
+* **Requirements Analysis:** Breakdown of the "Car Sharing" feature.
+* **Mind Maps:** Visualization of the "Add Driver License" workflow ([View map](./docs/design/driver_license_mind_map.png)).
+* **Flowcharts:** Modeling of average speed logic based on departure time ([View flowchart](./docs/design/speed_logic_flowchart.png)).
+* **Test Design Techniques:**
+    * **Equivalence Partitioning (ECP):** Applied to the "First Name", "Last Name", distance between addresses, Departure Time (determines average transportation speed), "Card Number", and "Code" fields.
+    * **Boundary Value Analysis (BVA):** Identification of critical boundary points for character length validation in the "First Name", "Last Name", "Card Number", and "Code" fields. Also applied to departure time limits.
+
+## 4. Execution and Results
+### Calculation Logic (Validation Example)
+* **Formula:** $T = S / V$ | $Price = T \times Cost/min$
+* **Scenario:** East 2nd St -> 1717 E 7th St (0.89 km) at 11:00 AM (30 km/h).
+* **Expected Result:** 1.8 min / $0.18.
+* **Observed Result:** [Insert whether the test passed or failed].
+
+### Defect Summary
+| Total Test Cases | Passed | Failed | Blocked |
 | :--- | :--- | :--- | :--- |
 | XX | XX | XX | XX |
 
-## 5. Reporte de Errores (Evidencia)
-Los errores detectados fueron documentados en Jira, siguiendo el estándar: Título, Pasos de reproducción, Resultado esperado vs. observado, Severidad y Prioridad.
-* [Ver Reporte de Errores Consolidado](./bug-reports/BUGS_REPORT.md)
-* [Ver Capturas de Jira](./evidence/jira-tickets/)
+## 5. Bug Reporting (Evidence)
+Detected defects were documented in Jira following the standard format: Title, Steps to Reproduce, Expected vs. Actual Result, Severity, and Priority.
+* [View Consolidated Bug Report](./bug-reports/BUGS_REPORT.md)
+* [View Jira Screenshots](./evidence/jira-tickets/)
 
-## 6. Herramientas Utilizadas
-* **Gestión:** Jira
-* **Diseño:** Figma
-* **Documentación:** Google Sheets / Markdown
+## 6. Tools Used
+* **Management:** Jira
+* **Design:** Figma
+* **Documentation:** Google Sheets / Markdown
