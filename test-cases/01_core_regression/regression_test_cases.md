@@ -7,7 +7,7 @@ This document contains the execution matrix for the 24 test cases provided by th
 ## Test Execution Matrix
 
 | ID | Title | Preconditions | Steps to Reproduce | Expected Result | Status | Related Bug ID |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :---: |
 | TC-01 | Map Navigation | Open the Urban Routes application | 1. Scroll the map up and down | The map moves correctly. All objects are displayed according to the design specifications. | Passed |
 | TC-02 | Map Zoom | The Urban Routes application must be closed | 1. Open the Urban Routes application.<br>2. Click the navigation button located in the bottom-right corner of the map.<br>3. Click the plus (+) button in the bottom-right corner. | The zoom level increases by one increment. All objects are displayed according to the design specifications. | Passed |
 | TC-03 | Area Labels on the Map Are Not Clickable | Open the Urban Routes application | 1. Click an area label on the map (example: Hollywood). | Nothing happens. Users cannot interact with map area labels. | Failed | [UR-REG-01](../../bug-reports/consolidated_bug_matrix.md#ur-reg-01) |

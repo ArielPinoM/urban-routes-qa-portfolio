@@ -3,7 +3,7 @@
 ## Module 1: Core Regression Bugs (7 Bugs)
 
 | ID | Title | Steps to Reproduce | Expected Result | Actual Result | Severity |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :---: |
 | <div id="ur-reg-01"></div>**UR-REG-01** | Map Area Labels Are Clickable and Display a Pop-up Window | 1. Open the Urban Routes application.<br>2. Click an area label on the map (example: Hollywood). | Nothing happens. Users cannot interact with map area labels. | A pop-up window with location details is displayed. | Minor |
 | <div id="ur-reg-02"></div>**UR-REG-02** | The "To" Field Does Not Display the Subway Station List When Entering the "Subway" Keyword | 1. Open the Urban Routes application.<br>2. Click the "To" field.<br>3. Type "Subway". | A list of subway stations is displayed. | Nothing happens. Objects cannot be searched in the "To" field. | Major |
 | <div id="ur-reg-03"></div>**UR-REG-03** | The Map Does Not Zoom In or Display the Location Pin After Entering an Address in the "From" Field | 1. Open the Urban Routes application.<br>2. Click the "From" field.<br>3. Enter an address (example: East 2nd Street, 601). | The map zooms in on the selected address pin. The view matches the design specifications. | The map remains static. No location pin is displayed and no zoom adjustment occurs. | Critical |
