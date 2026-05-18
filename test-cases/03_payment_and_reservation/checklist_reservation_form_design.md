@@ -75,7 +75,7 @@
 | CK-UI-37 | There is an "Add driver's license" field. | 🟢 PASSED | 🟢 PASSED |  |
 | CK-UI-38 | The "Add driver's license" field is located below the "Fare Details" component. | 🟢 PASSED | 🟢 PASSED |  |
 | CK-UI-39 | The initial state of the "Add driver's license" field is empty. | 🟢 PASSED | 🟢 PASSED |  |
-| CK-UI-40 | The text of the "Add driver's license" field matches the text "Add driver's license". | 🟢 PASSED | 🟢 PASSED |  |
+| CK-UI-40 | The text of the "Add driver's license" field matches the text "Agregar licencia de conducir". | 🟢 PASSED | 🟢 PASSED |  |
 | CK-UI-41 | The text of the "Add driver's license" field is bold. | 🟢 PASSED | 🔴 FAILED | [UR-BR-14](../../bug-reports/consolidated_bug_matrix.md#ur-br-14) |
 | CK-UI-42 | There is a ">" icon inside the "Add driver's license" field next to the right border. | 🔴 FAILED | 🔴 FAILED | [UR-BR-15](../../bug-reports/consolidated_bug_matrix.md#ur-br-15) |
 
@@ -90,11 +90,11 @@
 | CK-UI-45 | The initial state of the "Payment Method" field is empty. | 🟢 PASSED | 🟢 PASSED |  |
 | CK-UI-46 | The text in the "Payment Method" field is gray. | 🔴 FAILED | 🔴 FAILED | [UR-BR-16](../../bug-reports/consolidated_bug_matrix.md#ur-br-16) |
 | CK-UI-47 | The text in the "Payment Method" field is bold. | 🟢 PASSED | 🔴 FAILED | [UR-BR-17](../../bug-reports/consolidated_bug_matrix.md#ur-br-17) |
-| CK-UI-48 | The text in the "Payment Method" field matches the text "Payment Method". | 🟢 PASSED | 🟢 PASSED |  |
-| CK-UI-49 | An "Add" text is displayed inside the "Payment Method" field when it is empty. | 🟢 PASSED | 🟢 PASSED |  |
-| CK-UI-50 | The "Add" text inside the "Payment Method" field is aligned to the right side. | 🟢 PASSED | 🟢 PASSED |  |
+| CK-UI-48 | The text in the "Payment Method" field matches the text "Método de pago". | 🟢 PASSED | 🟢 PASSED |  |
+| CK-UI-49 | An "Agregar" text is displayed inside the "Payment Method" field when it is empty. | 🟢 PASSED | 🟢 PASSED |  |
+| CK-UI-50 | The "Agregar" text inside the "Payment Method" field is aligned to the right side. | 🟢 PASSED | 🟢 PASSED |  |
 | CK-UI-51 | There is a credit card icon inside the "Payment Method" field. | 🟢 PASSED | 🟢 PASSED |  |
-| CK-UI-52 | The credit card icon inside the "Payment Method" field is located to the right of the "Add" text. | 🟢 PASSED | 🟢 PASSED |  |
+| CK-UI-52 | The credit card icon inside the "Payment Method" field is located to the right of the "Agregar" text. | 🟢 PASSED | 🟢 PASSED |  |
 | CK-UI-53 | The credit card icon inside the "Payment Method" field matches the design. | 🟢 PASSED | 🟢 PASSED |  |
 | CK-UI-54 | There is a ">" icon inside the "Payment Method" field. | 🟢 PASSED | 🟢 PASSED |  |
 | CK-UI-55 | The ">" icon inside the "Payment Method" field is located to the right of the credit card icon. | 🟢 PASSED | 🟢 PASSED |  |
@@ -147,8 +147,8 @@
 | CK-UI-79 | The "Car Reserved" window includes the car icon. | 🟢 PASSED | 🟢 PASSED |  |
 | CK-UI-80 | The "Car Reserved" window includes the "X" cancel button. | 🟢 PASSED | 🟢 PASSED |  |
 | CK-UI-81 | The cancel button includes an "X" icon. | 🟢 PASSED | 🟢 PASSED |  |
-| CK-UI-82 | The cancel button includes the text "Cancel". | 🟢 PASSED | 🟢 PASSED |  |
-| CK-UI-83 | The "Cancel" text in the cancel button is located below. | 🟢 PASSED | 🟢 PASSED |  |
+| CK-UI-82 | The cancel button includes the text "Cancelar". | 🟢 PASSED | 🟢 PASSED |  |
+| CK-UI-83 | The "Cancelar" text in the cancel button is located below. | 🟢 PASSED | 🟢 PASSED |  |
 | CK-UI-84 | The "Car Reserved" window includes the car address. | 🟢 PASSED | 🟢 PASSED |  |
 | CK-UI-85 | The "Car Reserved" window includes the trip price. | 🟢 PASSED | 🟢 PASSED |  |
 
