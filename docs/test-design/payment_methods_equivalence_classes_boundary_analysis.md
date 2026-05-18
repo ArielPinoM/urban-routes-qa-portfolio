@@ -1,0 +1,2 @@
+> 📌 **Technical Reference:** This document contains the logical test design partitions used to derive the 56 verification points in the Payment Methods Checklist.
+> * **Requirement Mapping:** [PRD - Section 7: "Payment method" field](../../docs/requirements/car_sharing_service_requirements_english.md#7-payment-method-field)

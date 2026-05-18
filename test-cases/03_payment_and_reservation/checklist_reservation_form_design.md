@@ -1,6 +1,7 @@
 # Reservation Form Design Checklist (93 Verification Points)
 
-> 📌 **Note for Reviewers:** This checklist comprehensively validates the design layout, visual constraints, and interactive elements of the primary booking and reservation form.
+> 📌 **Note for Reviewers:** This checklist comprehensively validates the design layout and interactive elements of the booking form.
+> * **Requirement Source:** [PRD - Section 4: Booking Form & Section 6: Driver's License](../../docs/requirements/car_sharing_service_requirements_english.md#4-booking-form)
 > * **Execution Environments:** Google Chrome (Viewport: 800x600) & Mozilla Firefox (Viewport: 1920x1080).
 > * **Visual Blueprints:** The interface layouts, maps, and component mockups validated in this checklist can be fully reviewed in [visual_references.md > 3. Car Sharing Service Module](../../docs/design/visual_references.md#3-car-sharing-service-module).
 > * **Traceability:** 🔴 FAILED verification points are linked directly to their respective reports in the Bug Matrix.
