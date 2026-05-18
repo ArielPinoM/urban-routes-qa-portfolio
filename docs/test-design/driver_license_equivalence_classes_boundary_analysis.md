@@ -54,7 +54,7 @@
   </tr>
 
   <tr>
-    <td>Name with latin alphabet characters.</td>
+    <td>Name with Latin alphabet characters.</td>
     <td></td>
     <td></td>
     <td></td>
