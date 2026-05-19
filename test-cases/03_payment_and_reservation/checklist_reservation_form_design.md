@@ -42,14 +42,14 @@
 | CK-UI-21 | The subtitle is located below the header. | 🟢 PASSED | 🟢 PASSED | |
 | CK-UI-22 | The subtitle text is bold. | 🟢 PASSED | 🔴 FAILED | [UR-BR-09](../../bug-reports/consolidated_bug_matrix.md#ur-br-09) |
 | CK-UI-23 | The subtitle includes an icon on the left side. | 🔴 FAILED | 🔴 FAILED | [UR-BR-10](../../bug-reports/consolidated_bug_matrix.md#ur-br-10) |
-| CK-UI-24 | The icon matches the design. | 🟡 SKIPPED | 🟡 SKIPPED | |
+| CK-UI-24 | The icon matches the design. | 🟡 SKIPPED<br>There is no icon. | 🟡 SKIPPED<br>There is no icon. | |
 | CK-UI-25 | The "Fare Details" component includes a car image. | 🟢 PASSED | 🟢 PASSED | |
 | CK-UI-26 | The "Fare Details" component includes features (additional parameters). | 🟢 PASSED | 🟢 PASSED | |
 | CK-UI-27 | The feature text is bold. | 🟢 PASSED | 🔴 FAILED | [UR-BR-11](../../bug-reports/consolidated_bug_matrix.md#ur-br-11) |
 | CK-UI-28 | The badge for the "Casual" fare details matches the text "BMW 750". | 🟢 PASSED | 🟢 PASSED | |
 | CK-UI-29 | The header for the "Casual" fare details matches the text "Solo negocios, nada más". | 🟢 PASSED | 🟢 PASSED | |
 | CK-UI-30 | The subtitle for the "Casual" fare details matches the text "n minutos ● 15 minutos de tiempo de espera gratuito". | 🔴 FAILED | 🔴 FAILED | [UR-BR-12](../../bug-reports/consolidated_bug_matrix.md#ur-br-12) |
-| CK-UI-31 | The trip duration is not displayed in the subtitle if the user clears the address from the "From" field. | 🟡 SKIPPED | 🟡 SKIPPED | |
+| CK-UI-31 | The trip duration is not displayed in the subtitle if the user clears the address from the "Desde" field. | 🟡 SKIPPED<br>The form panel disappears when clearing the "Desde" field. | 🟡 SKIPPED<br>The form panel disappears when clearing the "Desde" field. | |
 | CK-UI-32 | The car image in the fare details matches the design. | 🟢 PASSED | 🟢 PASSED | |
 | CK-UI-33 | The features for the "Casual" fare match the text "cámara frontal ● cargador de teléfono". | 🟢 PASSED | 🟢 PASSED | |
 
@@ -62,8 +62,8 @@
 | Item ID | Monitoring Description | Test Status for Google Chrome 800x600 | Test Status for Firefox 1920x1080 | Bug Report Link |
 | :--- | :--- | :--- | :--- | :---: |
 | CK-UI-34 | The icon of the car closest to the user is displayed on the map. | 🔴 FAILED | 🔴 FAILED | [UR-BR-13](../../bug-reports/consolidated_bug_matrix.md#ur-br-13) |
-| CK-UI-35 | The icon of the closest car is larger than the others. | 🟡 SKIPPED | 🟡 SKIPPED | |
-| CK-UI-36 | A black label with the brand name is displayed above the car icon. | 🟡 SKIPPED | 🟡 SKIPPED | |
+| CK-UI-35 | The icon of the closest car is larger than the others. | 🟡 SKIPPED<br>The icon of the car is not shown. | 🟡 SKIPPED<br>The icon of the car is not shown. | |
+| CK-UI-36 | A black label with the brand name is displayed above the car icon. | 🟡 SKIPPED<br>The icon of the car is not shown. | 🟡 SKIPPED<br>The icon of the car is not shown. | |
 
 ---
 
@@ -130,8 +130,8 @@
 | CK-UI-68 | Verify that the booking button text matches<br>"Reservar<br>El recorrido será de .. kilómetros y se hará en .. minutos"<br>when all required fields and addresses have been completed. | 🟢 PASSED | 🟢 PASSED | |
 | CK-UI-69 | Verify that the booking button text matches<br>"Agregar licencia de conducir y reservar<br>El recorrido será de .. kilómetros y se hará en .. minutos"<br>when all required fields and addresses have been completed except for the driver's license field. | 🟢 PASSED | 🟢 PASSED | |
 | CK-UI-70 | Verify that the booking button text matches<br>"Agregar método de pago y reservar<br>El recorrido será de .. kilómetros y se hará en .. minutos"<br>when all required fields and addresses have been completed except for the payment method field. | 🟢 PASSED | 🟢 PASSED | |
-| CK-UI-71 | Verify that the booking button text matches "Agregar direcciones y reservar" when all required fields have been completed and the addresses have been cleared. | 🟡 SKIPPED | 🟡 SKIPPED | |
-| CK-UI-72 | Verify that the booking button text matches "Agregar licencia de conducir y reservar" when none of the required fields have been completed and the addresses have been cleared. | 🟡 SKIPPED | 🟡 SKIPPED | |
+| CK-UI-71 | Verify that the booking button text matches "Agregar direcciones y reservar" when all required fields have been completed and the addresses have been cleared. | 🟡 SKIPPED<br>When clearing the addresses fields, the form panel disappears. | 🟡 SKIPPED<br>When clearing the addresses fields, the form panel disappears. | |
+| CK-UI-72 | Verify that the booking button text matches "Agregar licencia de conducir y reservar" when none of the required fields have been completed and the addresses have been cleared. | 🟡 SKIPPED<br>When clearing the addresses fields, the form panel disappears. | 🟡 SKIPPED<br>When clearing the addresses fields, the form panel disappears. | |
 
 ---
 
@@ -159,11 +159,11 @@
 
 | Item ID | Monitoring Description | Test Status for Google Chrome 800x600 | Test Status for Firefox 1920x1080 | Bug Report Link |
 | :--- | :--- | :--- | :--- | :---: |
-| CK-UI-86 | The "Are you sure you want to cancel the trip?" window includes the text "¿Seguro que quieres cancelar el viaje?". | 🟡 SKIPPED | 🟡 SKIPPED | |
-| CK-UI-87 | The "Are you sure you want to cancel the trip?" window includes the "No" button. | 🟡 SKIPPED | 🟡 SKIPPED | |
-| CK-UI-88 | The "No" button is gray. | 🟡 SKIPPED | 🟡 SKIPPED | |
-| CK-UI-89 | The "Are you sure you want to cancel the trip?" window includes the "Sí" button. | 🟡 SKIPPED | 🟡 SKIPPED | |
-| CK-UI-90 | The "Sí" button is blue. | 🟡 SKIPPED | 🟡 SKIPPED | |
+| CK-UI-86 | The "Are you sure you want to cancel the trip?" window includes the text "¿Seguro que quieres cancelar el viaje?". | 🟡 SKIPPED<br>The window won't open when pressing the "X" cancel button. | 🟡 SKIPPED<br>The window won't open when pressing the "X" cancel button. | |
+| CK-UI-87 | The "Are you sure you want to cancel the trip?" window includes the "No" button. | 🟡 SKIPPED<br>The window won't open when pressing the "X" cancel button.<br>The window won't open when pressing the "X" cancel button. | 🟡 SKIPPED<br>The window won't open when pressing the "X" cancel button. | |
+| CK-UI-88 | The "No" button is gray. | 🟡 SKIPPED<br>The window won't open when pressing the "X" cancel button. | 🟡 SKIPPED<br>The window won't open when pressing the "X" cancel button. | |
+| CK-UI-89 | The "Are you sure you want to cancel the trip?" window includes the "Sí" button. | 🟡 SKIPPED<br>The window won't open when pressing the "X" cancel button. | 🟡 SKIPPED<br>The window won't open when pressing the "X" cancel button. | |
+| CK-UI-90 | The "Sí" button is blue. | 🟡 SKIPPED<br>The window won't open when pressing the "X" cancel button. | 🟡 SKIPPED<br>The window won't open when pressing the "X" cancel button. | |
 
 ---
 
@@ -171,6 +171,6 @@
 
 | Item ID | Monitoring Description | Test Status for Google Chrome 800x600 | Test Status for Firefox 1920x1080 | Bug Report Link |
 | :--- | :--- | :--- | :--- | :---: |
-| CK-UI-91 | The "Ride Canceled" window includes the text "Viaje cancelado". | 🟡 SKIPPED | 🟡 SKIPPED | |
-| CK-UI-92 | The "Ride Canceled" window includes the "Entendido" button. | 🟡 SKIPPED | 🟡 SKIPPED | |
-| CK-UI-93 | The "Entendido" button is blue. | 🟡 SKIPPED | 🟡 SKIPPED | |
+| CK-UI-91 | The "Ride Canceled" window includes the text "Viaje cancelado". | 🟡 SKIPPED<br>Can't get to the window. "X" cancel button is not working. | 🟡 SKIPPED<br>Can't get to the window. "X" cancel button is not working. | |
+| CK-UI-92 | The "Ride Canceled" window includes the "Entendido" button. | 🟡 SKIPPED<br>Can't get to the window. "X" cancel button is not working. | 🟡 SKIPPED<br>Can't get to the window. "X" cancel button is not working. | |
+| CK-UI-93 | The "Entendido" button is blue. | 🟡 SKIPPED<br>Can't get to the window. "X" cancel button is not working. | 🟡 SKIPPED<br>Can't get to the window. "X" cancel button is not working. | |

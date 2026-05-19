@@ -4,7 +4,11 @@
 
 ## 1. Business Logic & Core Assumptions
 
-### HACER REFERENCIA A LOS REQUERIMIENTOS DONDE SE ENCUENTRA ESTA LOGICA
+### Requirements reference
+
+* Based on the Car Sharing service requirements: `docs/requirements/car_sharing_service_requirements_english.md`.
+* Key section: **11. System parameters — price calculation**.
+* See especially the calculation formula in **11.3** and the average speeds by time slot in **11.4**.
 
 * **Variables:** `Departure Time` $\rightarrow$ Determines `Average Speed` $\rightarrow$ Impacts `Drive Time (ETA)` & `Trip Cost`.
 * **Core Pricing Formula:** $\text{Cost} = f(\text{Distance}, \text{Average Speed})$.

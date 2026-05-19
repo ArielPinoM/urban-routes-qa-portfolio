@@ -1,6 +1,6 @@
 > 📌 **Technical Reference:** This document contains the logical test design partitions used to derive the 56 verification points in the Payment Methods Checklist.
 > * **Target Component:** "Payment Method" -> "Add Card" Form.
-> * **Requirement Mapping:** [PRD - Section 7: "Payment method" field](../../docs/requirements/car_sharing_service_requirements_english.md#7-payment-method-field)
+> * **Requirement Mapping:** [PRD - Section 7: "Payment method" field](../../docs/requirements/car_sharing_service_requirements_english.md#7-método-de-pago-field)
 
 ## 1. Equivalence Partitioning (EP) & Boundary Value Analysis (BVA)
 

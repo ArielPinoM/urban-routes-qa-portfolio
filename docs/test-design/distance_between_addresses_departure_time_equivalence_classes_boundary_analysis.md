@@ -2,7 +2,7 @@
 * **Distance between addresses**
 * **Departure Time**
 
-## Hacer Referencia a los requerimientos https://drive.google.com/drive/folders/1s9J7NQ6OsAG2XYfzz8Vr6hwmtBu_hFOk
+> 📌 Requirement source: based on the Car Sharing Service PRD, in [Section 11.4 Average car speed](../../docs/requirements/car_sharing_service_requirements_english.md#114-average-car-speed).
 
 ---
 
