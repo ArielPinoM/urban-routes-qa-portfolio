@@ -1,6 +1,7 @@
 # Car Sharing Service: 30 Logic Test Cases (Design Phase)
 
 > 📌 **Note for Reviewers:** These test cases represent static test design for the Car Sharing pricing and duration engine. They focus on how the departure time alters the vehicle's average speed due to traffic coefficients, directly impacting the final estimated time of arrival (ETA) and fare cost.
+> * [EP & BVA Specification: Distance & Departure Time](../../docs/test-design/distance_between_addresses_departure_time_equivalence_classes_boundary_analysis.md)
 
 ## 1. Business Logic & Core Assumptions
 
