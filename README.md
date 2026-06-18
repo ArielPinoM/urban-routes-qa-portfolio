@@ -22,7 +22,7 @@ The verification scope was distributed across specific configurations to optimiz
 | **03 Car Sharing Logic** | Business Logic Design | N/A (Static Logic Design) | 30 Test Cases designed | [Logic Test Cases](./test-cases/02_car_sharing/logic_test_cases_design.md) |
 | **04 Form Layout UI** | Cross-Browser UI Layout | Google Chrome / Firefox | 93 Checklist items | [Reservation Form Checklist](./test-cases/03_payment_and_reservation/checklist_reservation_form_design.md) |
 | **05 Payment Window** | Functional UI / Security | Google Chrome | 56 Checklist items | [Payment Checklist](./test-cases/03_payment_and_reservation/checklist_payment_methods.md) |
-| **06 Booking Lifecycle** | End-to-End Functional | Google Chrome | 4 Lifecycle Test Cases | [Car Booking TCs](./test-cases/03_payment_and_reservation/test_cases_car_booking.md) / [Reservation Button TCs](./test-cases/03_payment_and_reservation/test_cases_reservation_button.md) |
+| **06 Booking Lifecycle** | End-to-End Functional | Google Chrome | 9 Test Cases | [Car Booking TCs](./test-cases/03_payment_and_reservation/test_cases_car_booking.md) / [Reservation Button TCs](./test-cases/03_payment_and_reservation/test_cases_reservation_button.md) |
 
 ---
 
@@ -60,7 +60,7 @@ To maintain strict traceability across requirements, design specs, and execution
 ### Defect Summary
 | Total Test Cases / Items | Passed | Failed | Skipped |
 | :--- | :--- | :--- | :--- |
-| 58 TCs / 149 Checklist Items | 146 | 61 | 17 |
+| 63 TCs / 149 Checklist Items | 103 | 61 | 18 |
 
 ---
 
